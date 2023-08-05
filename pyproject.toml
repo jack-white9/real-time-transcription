@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "real-time-transcription"
+version = "0.1.0"
+description = ""
+authors = ["Jack White <jfw793@gmail.com>"]
+readme = "README.md"
+packages = [{include = "real_time_transcription"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+amazon-transcribe = "^0.6.2"
+sounddevice = "^0.4.6"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
